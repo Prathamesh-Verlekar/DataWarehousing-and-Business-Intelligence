@@ -5,7 +5,7 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 
 Created a DataWarehouse containing data from AdventureWorks2017 that can be used by the business to answer questions on:
 
-• All product purchases made by AdventureWorks from vendors, i.e. purchase orders.
+• All product purchases made by AdventureWorks from vendors, i.e. purchase orders.\
 • List of products that might be purchased from Vendors, in other words, all the products that are not made by AdventureWorks.
 • Vendors that AdventureWorks might purchase products from.
 • Products that AdventureWorks might purchase from vendors and associated with the vendors that sell them.
