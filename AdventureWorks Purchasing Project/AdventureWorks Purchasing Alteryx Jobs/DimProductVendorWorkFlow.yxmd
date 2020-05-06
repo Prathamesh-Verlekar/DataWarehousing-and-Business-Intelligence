@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select aw2017neu_purchasing.productvendor.BusinessEntityID,
+	aw2017neu_purchasing.productvendor.AverageLeadTime,
+	aw2017neu_purchasing.productvendor.StandardPrice,
+	aw2017neu_purchasing.productvendor.LastReceiptCost,
+	aw2017neu_purchasing.productvendor.LastReceiptDate,
+	aw2017neu_purchasing.productvendor.MinOrderQty,
+	aw2017neu_purchasing.productvendor.MaxOrderQty,
+	aw2017neu_purchasing.productvendor.OnOrderQty,
+	aw2017neu_purchasing.productvendor.ProductID 
+from aw2017neu_purchasing.productvendor</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=aw2017neu_purchasing
+Query=select aw2017neu_purchasing....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BusinessEntityID" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select aw2017neu_purchasing.productvendor.BusinessEntityID,&#xA;	aw2017neu_purchasing.productvendor.AverageLeadTime,&#xA;	aw2017neu_purchasing.productvendor.StandardPrice,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptCost,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptDate,&#xA;	aw2017neu_purchasing.productvendor.MinOrderQty,&#xA;	aw2017neu_purchasing.productvendor.MaxOrderQty,&#xA;	aw2017neu_purchasing.productvendor.OnOrderQty,&#xA;	aw2017neu_purchasing.productvendor.ProductID &#xA;from aw2017neu_purchasing.productvendor" type="Int32" />
+            <Field name="AverageLeadTime" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select aw2017neu_purchasing.productvendor.BusinessEntityID,&#xA;	aw2017neu_purchasing.productvendor.AverageLeadTime,&#xA;	aw2017neu_purchasing.productvendor.StandardPrice,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptCost,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptDate,&#xA;	aw2017neu_purchasing.productvendor.MinOrderQty,&#xA;	aw2017neu_purchasing.productvendor.MaxOrderQty,&#xA;	aw2017neu_purchasing.productvendor.OnOrderQty,&#xA;	aw2017neu_purchasing.productvendor.ProductID &#xA;from aw2017neu_purchasing.productvendor" type="Int32" />
+            <Field name="StandardPrice" scale="2" size="17" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select aw2017neu_purchasing.productvendor.BusinessEntityID,&#xA;	aw2017neu_purchasing.productvendor.AverageLeadTime,&#xA;	aw2017neu_purchasing.productvendor.StandardPrice,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptCost,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptDate,&#xA;	aw2017neu_purchasing.productvendor.MinOrderQty,&#xA;	aw2017neu_purchasing.productvendor.MaxOrderQty,&#xA;	aw2017neu_purchasing.productvendor.OnOrderQty,&#xA;	aw2017neu_purchasing.productvendor.ProductID &#xA;from aw2017neu_purchasing.productvendor" type="FixedDecimal" />
+            <Field name="LastReceiptCost" scale="2" size="17" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select aw2017neu_purchasing.productvendor.BusinessEntityID,&#xA;	aw2017neu_purchasing.productvendor.AverageLeadTime,&#xA;	aw2017neu_purchasing.productvendor.StandardPrice,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptCost,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptDate,&#xA;	aw2017neu_purchasing.productvendor.MinOrderQty,&#xA;	aw2017neu_purchasing.productvendor.MaxOrderQty,&#xA;	aw2017neu_purchasing.productvendor.OnOrderQty,&#xA;	aw2017neu_purchasing.productvendor.ProductID &#xA;from aw2017neu_purchasing.productvendor" type="FixedDecimal" />
+            <Field name="LastReceiptDate" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select aw2017neu_purchasing.productvendor.BusinessEntityID,&#xA;	aw2017neu_purchasing.productvendor.AverageLeadTime,&#xA;	aw2017neu_purchasing.productvendor.StandardPrice,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptCost,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptDate,&#xA;	aw2017neu_purchasing.productvendor.MinOrderQty,&#xA;	aw2017neu_purchasing.productvendor.MaxOrderQty,&#xA;	aw2017neu_purchasing.productvendor.OnOrderQty,&#xA;	aw2017neu_purchasing.productvendor.ProductID &#xA;from aw2017neu_purchasing.productvendor" type="DateTime" />
+            <Field name="MinOrderQty" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select aw2017neu_purchasing.productvendor.BusinessEntityID,&#xA;	aw2017neu_purchasing.productvendor.AverageLeadTime,&#xA;	aw2017neu_purchasing.productvendor.StandardPrice,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptCost,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptDate,&#xA;	aw2017neu_purchasing.productvendor.MinOrderQty,&#xA;	aw2017neu_purchasing.productvendor.MaxOrderQty,&#xA;	aw2017neu_purchasing.productvendor.OnOrderQty,&#xA;	aw2017neu_purchasing.productvendor.ProductID &#xA;from aw2017neu_purchasing.productvendor" type="Int32" />
+            <Field name="MaxOrderQty" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select aw2017neu_purchasing.productvendor.BusinessEntityID,&#xA;	aw2017neu_purchasing.productvendor.AverageLeadTime,&#xA;	aw2017neu_purchasing.productvendor.StandardPrice,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptCost,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptDate,&#xA;	aw2017neu_purchasing.productvendor.MinOrderQty,&#xA;	aw2017neu_purchasing.productvendor.MaxOrderQty,&#xA;	aw2017neu_purchasing.productvendor.OnOrderQty,&#xA;	aw2017neu_purchasing.productvendor.ProductID &#xA;from aw2017neu_purchasing.productvendor" type="Int32" />
+            <Field name="OnOrderQty" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select aw2017neu_purchasing.productvendor.BusinessEntityID,&#xA;	aw2017neu_purchasing.productvendor.AverageLeadTime,&#xA;	aw2017neu_purchasing.productvendor.StandardPrice,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptCost,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptDate,&#xA;	aw2017neu_purchasing.productvendor.MinOrderQty,&#xA;	aw2017neu_purchasing.productvendor.MaxOrderQty,&#xA;	aw2017neu_purchasing.productvendor.OnOrderQty,&#xA;	aw2017neu_purchasing.productvendor.ProductID &#xA;from aw2017neu_purchasing.productvendor" type="Int32" />
+            <Field description="PrimaryKey" name="ProductID" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select aw2017neu_purchasing.productvendor.BusinessEntityID,&#xA;	aw2017neu_purchasing.productvendor.AverageLeadTime,&#xA;	aw2017neu_purchasing.productvendor.StandardPrice,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptCost,&#xA;	aw2017neu_purchasing.productvendor.LastReceiptDate,&#xA;	aw2017neu_purchasing.productvendor.MinOrderQty,&#xA;	aw2017neu_purchasing.productvendor.MaxOrderQty,&#xA;	aw2017neu_purchasing.productvendor.OnOrderQty,&#xA;	aw2017neu_purchasing.productvendor.ProductID &#xA;from aw2017neu_purchasing.productvendor" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="594" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ProductVendorID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="702" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Created_DT" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_Job_ID" size="254" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="&quot;2,3&quot;" field="SOR_SK" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Created_DT = DateTimeNow()
+DI_Job_ID = [Engine.WorkflowFileName]
+DI_Modified_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="222" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="VENDORID_NK" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMVENDOR.VENDORID_SK,
+	DIMVENDOR.VENDORID_NK 
+from DIMVENDOR</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=select DIMVENDOR.VENDORID_SK...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VENDORID_SK" scale="0" size="40" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMVENDOR.VENDORID_SK,&#xA;	DIMVENDOR.VENDORID_NK &#xA;from DIMVENDOR" type="FixedDecimal" />
+            <Field name="VENDORID_NK" scale="0" size="40" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMVENDOR.VENDORID_SK,&#xA;	DIMVENDOR.VENDORID_NK &#xA;from DIMVENDOR" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="282" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMPRODUCT."ProductID_SK",
+	DIMPRODUCT."ProductID_NK" 
+from DIMPRODUCT</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=select DIMPRODUCT."ProductID...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID_SK" scale="0" size="12" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMPRODUCT.&quot;ProductID_SK&quot;,&#xA;	DIMPRODUCT.&quot;ProductID_NK&quot; &#xA;from DIMPRODUCT" type="FixedDecimal" />
+            <Field name="ProductID_NK" scale="0" size="12" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMPRODUCT.&quot;ProductID_SK&quot;,&#xA;	DIMPRODUCT.&quot;ProductID_NK&quot; &#xA;from DIMPRODUCT" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="462" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductID_NK" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="834" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ProductVendorID_SK" selected="True" />
+            <SelectField field="BusinessEntityID" selected="True" rename="ProductVendorID_NK" />
+            <SelectField field="SOR_SK" selected="True" />
+            <SelectField field="AverageLeadTime" selected="True" />
+            <SelectField field="StandardPrice" selected="True" />
+            <SelectField field="LastReceiptCost" selected="True" />
+            <SelectField field="LastReceiptDate" selected="True" />
+            <SelectField field="MinOrderQty" selected="True" />
+            <SelectField field="MaxOrderQty" selected="True" />
+            <SelectField field="OnOrderQty" selected="True" />
+            <SelectField field="ProductID" selected="False" />
+            <SelectField field="VENDORID_SK" selected="True" />
+            <SelectField field="VENDORID_NK" selected="False" />
+            <SelectField field="ProductID_SK" selected="True" />
+            <SelectField field="ProductID_NK" selected="False" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DI_Created_DT" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="966" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||DIMPRODUCTVENDOR</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="ProductVendorID_SK" Dest="PRODUCTVENDORID_SK" />
+                <Field Source="ProductVendorID_NK" Dest="PRODUCTVENDORID_NK" />
+                <Field Source="SOR_SK" Dest="SOR_SK" />
+                <Field Source="AverageLeadTime" Dest="AVERAGELEADTIME" />
+                <Field Source="StandardPrice" Dest="STANDARDPRICE" />
+                <Field Source="LastReceiptCost" Dest="LASTRECEIPTCOST" />
+                <Field Source="LastReceiptDate" Dest="LASTRECEIPTDATE" />
+                <Field Source="MinOrderQty" Dest="MINORDERQTY" />
+                <Field Source="MaxOrderQty" Dest="MAXORDERQTY" />
+                <Field Source="OnOrderQty" Dest="ONORDERQTY" />
+                <Field Source="VENDORID_SK" Dest="VENDORID_SK" />
+                <Field Source="ProductID_SK" Dest="PRODUCTID_SK" />
+                <Field Source="DI_Job_ID" Dest="DI_JOBID" />
+                <Field Source="DI_Created_DT" Dest="CREATEDDATE" />
+                <Field Source="DI_Modified_Date" Dest="MODIFIEDDATE" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=DIMPRODUCTVENDOR</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="354" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="5" Connection="Left" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimProductVendorWorkFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

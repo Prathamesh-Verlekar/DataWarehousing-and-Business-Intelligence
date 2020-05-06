@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select shipmethod.ShipBase,
+	shipmethod.ShipMethodName,
+	shipmethod.ShipRate,
+	shipmethod.ETLLoadID,
+	shipmethod.ShipMethodID 
+from shipmethod</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=aw2017neu_purchasing
+Query=select shipmethod.ShipBase,...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ShipBase" scale="2" size="17" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select shipmethod.ShipBase,&#xA;	shipmethod.ShipMethodName,&#xA;	shipmethod.ShipRate,&#xA;	shipmethod.ETLLoadID,&#xA;	shipmethod.ShipMethodID &#xA;from shipmethod" type="FixedDecimal" />
+            <Field name="ShipMethodName" size="50" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select shipmethod.ShipBase,&#xA;	shipmethod.ShipMethodName,&#xA;	shipmethod.ShipRate,&#xA;	shipmethod.ETLLoadID,&#xA;	shipmethod.ShipMethodID &#xA;from shipmethod" type="V_String" />
+            <Field name="ShipRate" scale="2" size="17" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select shipmethod.ShipBase,&#xA;	shipmethod.ShipMethodName,&#xA;	shipmethod.ShipRate,&#xA;	shipmethod.ETLLoadID,&#xA;	shipmethod.ShipMethodID &#xA;from shipmethod" type="FixedDecimal" />
+            <Field name="ETLLoadID" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select shipmethod.ShipBase,&#xA;	shipmethod.ShipMethodName,&#xA;	shipmethod.ShipRate,&#xA;	shipmethod.ETLLoadID,&#xA;	shipmethod.ShipMethodID &#xA;from shipmethod" type="Int32" />
+            <Field description="PrimaryKey" name="ShipMethodID" source="File: odbc:DSN=aw2017neu_purchasing;UID=root;PWD=__EncPwd1__|||select shipmethod.ShipBase,&#xA;	shipmethod.ShipMethodName,&#xA;	shipmethod.ShipRate,&#xA;	shipmethod.ETLLoadID,&#xA;	shipmethod.ShipMethodID &#xA;from shipmethod" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="174" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ShipMethodName" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="450" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ShipMethodID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="318" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Created_Date" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_Job_ID" size="254" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="&quot;2&quot;" field="SOR_SK" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Created_Date = DateTimeNow()
+DI_Job_ID = [Engine.WorkflowFileName]
+DI_Modifie...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="582" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ShipMethodID_SK" selected="True" />
+            <SelectField field="ShipMethodID" selected="True" />
+            <SelectField field="SOR_SK" selected="True" />
+            <SelectField field="ShipMethodName" selected="True" />
+            <SelectField field="ShipBase" selected="True" />
+            <SelectField field="ShipRate" selected="True" />
+            <SelectField field="ETLLoadID" selected="False" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DI_Created_DT" selected="False" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="DI_Created_Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="690" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||DIMSHIPMETHOD</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="ShipMethodID_SK" Dest="SHIPMETHODID_SK" />
+                <Field Source="ShipMethodID" Dest="DIMSHIPMETHOD_NK" />
+                <Field Source="SOR_SK" Dest="SOR_SK" />
+                <Field Source="ShipMethodName" Dest="SHIPNAME" />
+                <Field Source="ShipBase" Dest="SHIPBASE" />
+                <Field Source="ShipRate" Dest="SHIPRATE" />
+                <Field Source="DI_Job_ID" Dest="DI_JOBID" />
+                <Field Source="DI_Modified_Date" Dest="MODIFIEDDATE" />
+                <Field Source="DI_Created_Date" Dest="CREATEDDATE" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=DIMSHIPMETHOD</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimShipMethodWorkFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:AdventureWorks_Purch_DW|||select Production.ProductInventory.ProductID,
+	Production.ProductInventory.Quantity,
+	Production.ProductInventory.LocationID 
+from Production.ProductInventory</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks_Purch_DW
+Query=select Production.ProductInv...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID" source="File: aka:AdventureWorks_Purch_DW|||select Production.ProductInventory.ProductID,&#xA;	Production.ProductInventory.Quantity,&#xA;	Production.ProductInventory.LocationID &#xA;from Production.ProductInventory" type="Int32" />
+            <Field name="Quantity" source="File: aka:AdventureWorks_Purch_DW|||select Production.ProductInventory.ProductID,&#xA;	Production.ProductInventory.Quantity,&#xA;	Production.ProductInventory.LocationID &#xA;from Production.ProductInventory" type="Int16" />
+            <Field name="LocationID" source="File: aka:AdventureWorks_Purch_DW|||select Production.ProductInventory.ProductID,&#xA;	Production.ProductInventory.Quantity,&#xA;	Production.ProductInventory.LocationID &#xA;from Production.ProductInventory" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="714" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>InventoryID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMPRODUCT."ProductID_SK",
+	DIMPRODUCT."ProductID_NK" 
+from DIMPRODUCT</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=select DIMPRODUCT."ProductID...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID_SK" scale="0" size="12" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMPRODUCT.&quot;ProductID_SK&quot;,&#xA;	DIMPRODUCT.&quot;ProductID_NK&quot; &#xA;from DIMPRODUCT" type="FixedDecimal" />
+            <Field name="ProductID_NK" scale="0" size="12" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMPRODUCT.&quot;ProductID_SK&quot;,&#xA;	DIMPRODUCT.&quot;ProductID_NK&quot; &#xA;from DIMPRODUCT" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="378" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductID_NK" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="330" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMLOCATION.LOCATIONID_SK,
+	DIMLOCATION.LOCATIONID_NK 
+from DIMLOCATION</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=select DIMLOCATION.LOCATIONI...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="LOCATIONID_SK" scale="0" size="40" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMLOCATION.LOCATIONID_SK,&#xA;	DIMLOCATION.LOCATIONID_NK &#xA;from DIMLOCATION" type="FixedDecimal" />
+            <Field name="LOCATIONID_NK" scale="0" size="40" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMLOCATION.LOCATIONID_SK,&#xA;	DIMLOCATION.LOCATIONID_NK &#xA;from DIMLOCATION" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="258" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ProductID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="474" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="LocationID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="LOCATIONID_NK" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="450" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="LOCATIONID_NK" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="606" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Created_DT" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JOB_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;1, 3&quot;" field="SOR_SK" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Created_DT = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+DI_JOB_ID = [Engi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="834" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="InventoryID_SK" selected="True" />
+            <SelectField field="SOR_SK" selected="True" />
+            <SelectField field="ProductID" selected="False" />
+            <SelectField field="Quantity" selected="True" />
+            <SelectField field="LocationID" selected="False" />
+            <SelectField field="ProductID_SK" selected="True" />
+            <SelectField field="ProductID_NK" selected="False" />
+            <SelectField field="LOCATIONID_SK" selected="True" />
+            <SelectField field="LOCATIONID_NK" selected="False" />
+            <SelectField field="DI_Created_DT" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="DI_JOB_ID" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="930" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||FACTINVENTORY</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="InventoryID_SK" Dest="INVENTORYID_SK" />
+                <Field Source="SOR_SK" Dest="SOR_SK" />
+                <Field Source="Quantity" Dest="QUANTITY" />
+                <Field Source="ProductID_SK" Dest="PRODUCTID_SK" />
+                <Field Source="LOCATIONID_SK" Dest="LOCATIONID_SK" />
+                <Field Source="DI_Created_DT" Dest="CREATEDDATE" />
+                <Field Source="DI_Modified_Date" Dest="MODIFIEDDATE" />
+                <Field Source="DI_JOB_ID" Dest="DI_JOBID" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=FACTINVENTORY</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Unique" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Unique" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FactInventoryWorkFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

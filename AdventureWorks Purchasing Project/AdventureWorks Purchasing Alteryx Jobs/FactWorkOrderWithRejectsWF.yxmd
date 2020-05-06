@@ -1,0 +1,538 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:AdventureWorks_Purch_DW|||select Production.WorkOrder.WorkOrderID,
+	Production.WorkOrder.OrderQty,
+	Production.WorkOrder.StockedQty,
+	Production.WorkOrder.ScrappedQty,
+	Production.WorkOrder.StartDate,
+	Production.WorkOrder.EndDate,
+	Production.WorkOrder.DueDate,
+	Production.WorkOrder.ScrapReasonID,
+	Production.WorkOrder.ProductID 
+from Production.WorkOrder</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks_Purch_DW
+Query=select Production.WorkOrder....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="WorkOrderID" source="File: aka:AdventureWorks_Purch_DW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID,&#xA;	Production.WorkOrder.ProductID &#xA;from Production.WorkOrder" type="Int32" />
+            <Field name="OrderQty" source="File: aka:AdventureWorks_Purch_DW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID,&#xA;	Production.WorkOrder.ProductID &#xA;from Production.WorkOrder" type="Int32" />
+            <Field name="StockedQty" source="File: aka:AdventureWorks_Purch_DW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID,&#xA;	Production.WorkOrder.ProductID &#xA;from Production.WorkOrder" type="Int32" />
+            <Field name="ScrappedQty" source="File: aka:AdventureWorks_Purch_DW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID,&#xA;	Production.WorkOrder.ProductID &#xA;from Production.WorkOrder" type="Int16" />
+            <Field name="StartDate" source="File: aka:AdventureWorks_Purch_DW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID,&#xA;	Production.WorkOrder.ProductID &#xA;from Production.WorkOrder" type="DateTime" />
+            <Field name="EndDate" source="File: aka:AdventureWorks_Purch_DW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID,&#xA;	Production.WorkOrder.ProductID &#xA;from Production.WorkOrder" type="DateTime" />
+            <Field name="DueDate" source="File: aka:AdventureWorks_Purch_DW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID,&#xA;	Production.WorkOrder.ProductID &#xA;from Production.WorkOrder" type="DateTime" />
+            <Field name="ScrapReasonID" source="File: aka:AdventureWorks_Purch_DW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID,&#xA;	Production.WorkOrder.ProductID &#xA;from Production.WorkOrder" type="Int16" />
+            <Field name="ProductID" source="File: aka:AdventureWorks_Purch_DW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID,&#xA;	Production.WorkOrder.ProductID &#xA;from Production.WorkOrder" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="222" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ScrapReasonID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="SCRAPREASONID_SK" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_WorkOrderID" selected="True" input="Left_" />
+                <SelectField field="Left_OrderQty" selected="True" input="Left_" />
+                <SelectField field="Left_StockedQty" selected="True" input="Left_" />
+                <SelectField field="Left_ScrappedQty" selected="True" input="Left_" />
+                <SelectField field="Left_StartDate" selected="True" input="Left_" />
+                <SelectField field="Left_EndDate" selected="True" input="Left_" />
+                <SelectField field="Left_DueDate" selected="True" input="Left_" />
+                <SelectField field="Left_ProductID" selected="True" input="Left_" />
+                <SelectField field="Right_SCRAPREASONID_SK" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMSCRAPREASON.SCRAPREASONID_SK,
+	DIMSCRAPREASON.SCRAPREASONID_NK 
+from DIMSCRAPREASON</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=select DIMSCRAPREASON.SCRAPR...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SCRAPREASONID_SK" scale="0" size="40" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMSCRAPREASON.SCRAPREASONID_SK,&#xA;	DIMSCRAPREASON.SCRAPREASONID_NK &#xA;from DIMSCRAPREASON" type="FixedDecimal" />
+            <Field name="SCRAPREASONID_NK" scale="0" size="40" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMSCRAPREASON.SCRAPREASONID_SK,&#xA;	DIMSCRAPREASON.SCRAPREASONID_NK &#xA;from DIMSCRAPREASON" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="414" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_WorkOrderID" selected="True" input="Left_" />
+                <SelectField field="Left_OrderQty" selected="True" input="Left_" />
+                <SelectField field="Left_StockedQty" selected="True" input="Left_" />
+                <SelectField field="Left_ScrappedQty" selected="True" input="Left_" />
+                <SelectField field="Left_StartDate" selected="True" input="Left_" />
+                <SelectField field="Left_EndDate" selected="True" input="Left_" />
+                <SelectField field="Left_DueDate" selected="True" input="Left_" />
+                <SelectField field="Left_ScrapReasonID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductID" selected="True" input="Left_" />
+                <SelectField field="Right_ProductID" selected="True" rename="Right_ProductID" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="582" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>WorkOrderID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="702" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Created_DT" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JOB_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;1, 3&quot;" field="SOR_SK" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Created_DT = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+DI_JOB_ID = [Engi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="414" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:AdventureWorks_Purch_DW|||select Production.Product.ProductID 
+from Production.Product</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks_Purch_DW
+Query=select Production.Product.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID" source="File: aka:AdventureWorks_Purch_DW|||select Production.Product.ProductID &#xA;from Production.Product" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="234" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>WorkOrderID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="714" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Created_DT" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JOB_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;1, 3&quot;" field="SOR_SK" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;R2&quot;" field="Reject_code" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Created_DT = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+DI_JOB_ID = [Engi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="906" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||FACT_WORKORDER</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="WorkOrderID_SK" Dest="WORKORDERID_SK" />
+                <Field Source="WorkOrderID" Dest="WORKORDERID_NK" />
+                <Field Source="OrderQty" Dest="ORDERQTY" />
+                <Field Source="StockedQty" Dest="STOCKEDQTY" />
+                <Field Source="ScrappedQty" Dest="SCRAPPEDQTY" />
+                <Field Source="StartDate" Dest="STARTDATE" />
+                <Field Source="EndDate" Dest="ENDDATE" />
+                <Field Source="DueDate" Dest="DUEDATE" />
+                <Field Source="ProductID" Dest="PRODUCTID_SK" />
+                <Field Source="DI_Created_DT" Dest="CREATEDDATE" />
+                <Field Source="DI_Modified_Date" Dest="MODIFIEDDATE" />
+                <Field Source="DI_JOB_ID" Dest="DI_JOBID" />
+                <Field Source="SOR_SK" Dest="SOR_SK" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=FACT_WORKORDER</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="798" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="WorkOrderID_SK" selected="True" />
+            <SelectField field="WorkOrderID" selected="True" />
+            <SelectField field="OrderQty" selected="True" />
+            <SelectField field="StockedQty" selected="True" />
+            <SelectField field="ScrappedQty" selected="True" />
+            <SelectField field="StartDate" selected="True" />
+            <SelectField field="EndDate" selected="True" />
+            <SelectField field="DueDate" selected="True" />
+            <SelectField field="ProductID" selected="True" />
+            <SelectField field="DI_Created_DT" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="DI_JOB_ID" selected="True" />
+            <SelectField field="SOR_SK" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="810" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="WorkOrderID_SK" selected="True" />
+            <SelectField field="WorkOrderID" selected="True" />
+            <SelectField field="OrderQty" selected="True" />
+            <SelectField field="StockedQty" selected="True" />
+            <SelectField field="ScrappedQty" selected="True" />
+            <SelectField field="StartDate" selected="True" />
+            <SelectField field="EndDate" selected="True" />
+            <SelectField field="DueDate" selected="True" />
+            <SelectField field="ProductID" selected="True" />
+            <SelectField field="SCRAPREASONID_SK" selected="True" />
+            <SelectField field="DI_Created_DT" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="DI_JOB_ID" selected="True" />
+            <SelectField field="SOR_SK" selected="True" />
+            <SelectField field="Reject_code" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="918" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||FACT_WORKORDER_REJECTS</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="WorkOrderID_SK" Dest="WORKORDERREJECTID_SK" />
+                <Field Source="WorkOrderID" Dest="WORKORDERREJECTSID_NK" />
+                <Field Source="OrderQty" Dest="ORDERQTY" />
+                <Field Source="StockedQty" Dest="STOCKEDQTY" />
+                <Field Source="ScrappedQty" Dest="SCRAPPEDQTY" />
+                <Field Source="StartDate" Dest="STARTDATE" />
+                <Field Source="EndDate" Dest="ENDDATE" />
+                <Field Source="DueDate" Dest="DUEDATE" />
+                <Field Source="ProductID" Dest="PRODUCTID_SK" />
+                <Field Source="SCRAPREASONID_SK" Dest="SCRAPREASONID_SK" />
+                <Field Source="DI_Created_DT" Dest="CREATEDDATE" />
+                <Field Source="DI_Modified_Date" Dest="MODIFIEDDATE" />
+                <Field Source="DI_JOB_ID" Dest="DI_JOBID" />
+                <Field Source="SOR_SK" Dest="SOR_SK" />
+                <Field Source="Reject_code" Dest="REJECTCODE" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=FACT_WORKORDER_REJECTS</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Left" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FactWorkOrderWithRejectsWF</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

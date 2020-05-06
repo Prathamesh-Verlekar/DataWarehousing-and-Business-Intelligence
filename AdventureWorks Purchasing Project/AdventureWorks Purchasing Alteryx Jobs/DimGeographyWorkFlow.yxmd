@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select ADDRESS.CITY,
+	ADDRESS.STATEPROVINCEID,
+	ADDRESS.POSTALCODE 
+from ADDRESS</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=aw2017neu_person
+Query=select ADDRESS.CITY,
+	ADDRE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CITY" size="30" source="File: odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select ADDRESS.CITY,&#xA;	ADDRESS.STATEPROVINCEID,&#xA;	ADDRESS.POSTALCODE &#xA;from ADDRESS" type="V_WString" />
+            <Field name="STATEPROVINCEID" scale="0" size="12" source="File: odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select ADDRESS.CITY,&#xA;	ADDRESS.STATEPROVINCEID,&#xA;	ADDRESS.POSTALCODE &#xA;from ADDRESS" type="FixedDecimal" />
+            <Field name="POSTALCODE" size="15" source="File: odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select ADDRESS.CITY,&#xA;	ADDRESS.STATEPROVINCEID,&#xA;	ADDRESS.POSTALCODE &#xA;from ADDRESS" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select STATEPROVINCE1.STATEPROVINCEID,
+	STATEPROVINCE1.STATEPROVINCECODE,
+	STATEPROVINCE1.COUNTRYREGIONCODE,
+	STATEPROVINCE1.STATEPROVINCENAME 
+from STATEPROVINCE STATEPROVINCE1</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=aw2017neu_person
+Query=select STATEPROVINCE1.STATEP...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="STATEPROVINCEID" scale="0" size="12" source="File: odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select STATEPROVINCE1.STATEPROVINCEID,&#xA;	STATEPROVINCE1.STATEPROVINCECODE,&#xA;	STATEPROVINCE1.COUNTRYREGIONCODE,&#xA;	STATEPROVINCE1.STATEPROVINCENAME &#xA;from STATEPROVINCE STATEPROVINCE1" type="FixedDecimal" />
+            <Field name="STATEPROVINCECODE" size="3" source="File: odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select STATEPROVINCE1.STATEPROVINCEID,&#xA;	STATEPROVINCE1.STATEPROVINCECODE,&#xA;	STATEPROVINCE1.COUNTRYREGIONCODE,&#xA;	STATEPROVINCE1.STATEPROVINCENAME &#xA;from STATEPROVINCE STATEPROVINCE1" type="WString" />
+            <Field name="COUNTRYREGIONCODE" size="3" source="File: odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select STATEPROVINCE1.STATEPROVINCEID,&#xA;	STATEPROVINCE1.STATEPROVINCECODE,&#xA;	STATEPROVINCE1.COUNTRYREGIONCODE,&#xA;	STATEPROVINCE1.STATEPROVINCENAME &#xA;from STATEPROVINCE STATEPROVINCE1" type="V_WString" />
+            <Field name="STATEPROVINCENAME" size="50" source="File: odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select STATEPROVINCE1.STATEPROVINCEID,&#xA;	STATEPROVINCE1.STATEPROVINCECODE,&#xA;	STATEPROVINCE1.COUNTRYREGIONCODE,&#xA;	STATEPROVINCE1.STATEPROVINCENAME &#xA;from STATEPROVINCE STATEPROVINCE1" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="258" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="STATEPROVINCEID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="STATEPROVINCEID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_City" selected="True" input="Left_" />
+                <SelectField field="Left_StateProvinceID" selected="True" input="Left_" />
+                <SelectField field="Left_PostalCode" selected="True" input="Left_" />
+                <SelectField field="Right_StateProvinceID" selected="True" rename="Right_StateProvinceID" input="Right_" />
+                <SelectField field="Right_StateProvinceCode" selected="True" input="Right_" />
+                <SelectField field="Right_CountryRegionCode" selected="True" input="Right_" />
+                <SelectField field="Right_STATEPROVINCENAME" selected="True" input="Right_" />
+                <SelectField field="Right_Name" selected="False" rename="StateName" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="246" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select COUNTRYREGION1.COUNTRYREGIONCODE,
+	COUNTRYREGION1.COUNTRYREGIONNAME 
+from COUNTRYREGION COUNTRYREGION1</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=aw2017neu_person
+Query=select COUNTRYREGION1.COUNTR...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="COUNTRYREGIONCODE" size="3" source="File: odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select COUNTRYREGION1.COUNTRYREGIONCODE,&#xA;	COUNTRYREGION1.COUNTRYREGIONNAME &#xA;from COUNTRYREGION COUNTRYREGION1" type="V_WString" />
+            <Field name="COUNTRYREGIONNAME" size="50" source="File: odbc:DSN=aw2017neu_person;UID=aw2017neu_person;PWD=__EncPwd1__|||select COUNTRYREGION1.COUNTRYREGIONCODE,&#xA;	COUNTRYREGION1.COUNTRYREGIONNAME &#xA;from COUNTRYREGION COUNTRYREGION1" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="378" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="COUNTRYREGIONCODE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="COUNTRYREGIONCODE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_City" selected="True" rename="CityName" input="Left_" />
+                <SelectField field="Left_StateProvinceID" selected="True" input="Left_" />
+                <SelectField field="Left_PostalCode" selected="True" input="Left_" />
+                <SelectField field="Left_Right_StateProvinceID" selected="True" input="Left_" />
+                <SelectField field="Left_StateProvinceCode" selected="True" input="Left_" />
+                <SelectField field="Left_CountryRegionCode" selected="True" input="Left_" />
+                <SelectField field="Left_STATEPROVINCENAME" selected="True" rename="StateName" input="Left_" />
+                <SelectField field="Right_CountryRegionCode" selected="True" rename="Right_CountryRegionCode" input="Right_" />
+                <SelectField field="Right_COUNTRYREGIONNAME" selected="True" rename="CountryName" input="Right_" />
+                <SelectField field="Right_Name" selected="False" rename="CountryName" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="762" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="GeographyID_SK" selected="True" />
+            <SelectField field="SOR_SK" selected="True" />
+            <SelectField field="ADDRESSID" selected="False" />
+            <SelectField field="PostalCode" selected="True" />
+            <SelectField field="CityName" selected="True" />
+            <SelectField field="StateProvinceCode" selected="True" />
+            <SelectField field="StateName" selected="True" />
+            <SelectField field="CountryRegionCode" selected="True" />
+            <SelectField field="CountryName" selected="True" />
+            <SelectField field="STATEPROVINCEID" selected="False" />
+            <SelectField field="Right_StateProvinceID" selected="False" />
+            <SelectField field="Right_CountryRegionCode" selected="False" />
+            <SelectField field="DI_JOB_ID" selected="True" />
+            <SelectField field="DI_Created_DT" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="522" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>GeographyID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="642" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Created_DT" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JOB_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;3&quot;" field="SOR_SK" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Created_DT = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+DI_JOB_ID = [Engi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="894" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||DIMGEOGRAPHY</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="GeographyID_SK" Dest="GEOGRAPHYID_SK" />
+                <Field Source="SOR_SK" Dest="SOR_SK" />
+                <Field Source="POSTALCODE" Dest="POSTALCODE" />
+                <Field Source="CityName" Dest="CITY" />
+                <Field Source="STATEPROVINCECODE" Dest="STATEPROVINCECODE" />
+                <Field Source="StateName" Dest="STATEPROVINCENAME" />
+                <Field Source="COUNTRYREGIONCODE" Dest="COUNTRYREGIONCODE" />
+                <Field Source="CountryName" Dest="COUNTRYREGIONNAME" />
+                <Field Source="DI_JOB_ID" Dest="DI_JOBID" />
+                <Field Source="DI_Created_DT" Dest="CREATEDDATE" />
+                <Field Source="DI_Modified_Date" Dest="MODIFIEDDATE" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=DIMGEOGRAPHY</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="CITY" />
+            <Field field="POSTALCODE" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="378" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>COUNTRYREGIONCODE</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-26 17:03:12</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>US</Operand>
+              <StartDate>2020-02-26 17:03:12</StartDate>
+              <EndDate>2020-02-26 17:03:12</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[COUNTRYREGIONCODE] = "US"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Unique" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimGeographyWorkFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

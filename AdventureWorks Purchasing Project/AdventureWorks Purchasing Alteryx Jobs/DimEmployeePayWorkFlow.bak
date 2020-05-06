@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEE.BUSINESSENTITYID,
+	EMPLOYEE.NATIONALIDNUMBER 
+from EMPLOYEE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks_Purch_Oracle_SRC
+Query=select EMPLOYEE.BUSINESSENTI...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER &#xA;from EMPLOYEE" type="Int64" />
+            <Field name="NATIONALIDNUMBER" size="15" source="File: aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER &#xA;from EMPLOYEE" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEEPAYHISTORY.BUSINESSENTITYID,
+	EMPLOYEEPAYHISTORY.RATECHANGEDATE,
+	EMPLOYEEPAYHISTORY.RATE,
+	EMPLOYEEPAYHISTORY.PAYFREQUENCY 
+from EMPLOYEEPAYHISTORY</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks_Purch_Oracle_SRC
+Query=select EMPLOYEEPAYHISTORY.BU...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEEPAYHISTORY.BUSINESSENTITYID,&#xA;	EMPLOYEEPAYHISTORY.RATECHANGEDATE,&#xA;	EMPLOYEEPAYHISTORY.RATE,&#xA;	EMPLOYEEPAYHISTORY.PAYFREQUENCY &#xA;from EMPLOYEEPAYHISTORY" type="Int64" />
+            <Field description="PrimaryKey" name="RATECHANGEDATE" source="File: aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEEPAYHISTORY.BUSINESSENTITYID,&#xA;	EMPLOYEEPAYHISTORY.RATECHANGEDATE,&#xA;	EMPLOYEEPAYHISTORY.RATE,&#xA;	EMPLOYEEPAYHISTORY.PAYFREQUENCY &#xA;from EMPLOYEEPAYHISTORY" type="DateTime" />
+            <Field name="RATE" source="File: aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEEPAYHISTORY.BUSINESSENTITYID,&#xA;	EMPLOYEEPAYHISTORY.RATECHANGEDATE,&#xA;	EMPLOYEEPAYHISTORY.RATE,&#xA;	EMPLOYEEPAYHISTORY.PAYFREQUENCY &#xA;from EMPLOYEEPAYHISTORY" type="Double" />
+            <Field name="PAYFREQUENCY" source="File: aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEEPAYHISTORY.BUSINESSENTITYID,&#xA;	EMPLOYEEPAYHISTORY.RATECHANGEDATE,&#xA;	EMPLOYEEPAYHISTORY.RATE,&#xA;	EMPLOYEEPAYHISTORY.PAYFREQUENCY &#xA;from EMPLOYEEPAYHISTORY" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="246" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_BUSINESSENTITYID" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Right_BUSINESSENTITYID" selected="False" rename="Right_BUSINESSENTITYID" input="Right_" />
+                <SelectField field="Right_RATECHANGEDATE" selected="True" input="Right_" />
+                <SelectField field="Right_RATE" selected="True" input="Right_" />
+                <SelectField field="Right_PAYFREQUENCY" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="270" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEEDEPARTMENTHISTORY.STARTDATE,
+	EMPLOYEEDEPARTMENTHISTORY.BUSINESSENTITYID,
+	EMPLOYEEDEPARTMENTHISTORY.ENDDATE 
+from EMPLOYEEDEPARTMENTHISTORY</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks_Purch_Oracle_SRC
+Query=select EMPLOYEEDEPARTMENTHIS...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="STARTDATE" source="File: aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEEDEPARTMENTHISTORY.STARTDATE,&#xA;	EMPLOYEEDEPARTMENTHISTORY.BUSINESSENTITYID,&#xA;	EMPLOYEEDEPARTMENTHISTORY.ENDDATE &#xA;from EMPLOYEEDEPARTMENTHISTORY" type="DateTime" />
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEEDEPARTMENTHISTORY.STARTDATE,&#xA;	EMPLOYEEDEPARTMENTHISTORY.BUSINESSENTITYID,&#xA;	EMPLOYEEDEPARTMENTHISTORY.ENDDATE &#xA;from EMPLOYEEDEPARTMENTHISTORY" type="Int64" />
+            <Field name="ENDDATE" source="File: aka:AdventureWorks_Purch_Oracle_SRC|||select EMPLOYEEDEPARTMENTHISTORY.STARTDATE,&#xA;	EMPLOYEEDEPARTMENTHISTORY.BUSINESSENTITYID,&#xA;	EMPLOYEEDEPARTMENTHISTORY.ENDDATE &#xA;from EMPLOYEEDEPARTMENTHISTORY" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="426" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_BUSINESSENTITYID" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_RATECHANGEDATE" selected="True" input="Left_" />
+                <SelectField field="Left_RATE" selected="True" input="Left_" />
+                <SelectField field="Left_PAYFREQUENCY" selected="True" input="Left_" />
+                <SelectField field="Right_STARTDATE" selected="True" input="Right_" />
+                <SelectField field="Right_BUSINESSENTITYID" selected="False" rename="Right_BUSINESSENTITYID" input="Right_" />
+                <SelectField field="Right_ENDDATE" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="438" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMEMPLOYEE.EMPLOYEEID_SK,
+	DIMEMPLOYEE.EMPLOYEEID_NK 
+from DIMEMPLOYEE</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=select DIMEMPLOYEE.EMPLOYEEI...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EMPLOYEEID_SK" scale="0" size="40" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMEMPLOYEE.EMPLOYEEID_SK,&#xA;	DIMEMPLOYEE.EMPLOYEEID_NK &#xA;from DIMEMPLOYEE" type="FixedDecimal" />
+            <Field name="EMPLOYEEID_NK" scale="0" size="40" source="File: odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||select DIMEMPLOYEE.EMPLOYEEID_SK,&#xA;	DIMEMPLOYEE.EMPLOYEEID_NK &#xA;from DIMEMPLOYEE" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="570" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="EMPLOYEEID_NK" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="762" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Created_DT" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_Job_ID" size="254" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="&quot;3&quot;" field="SOR_SK" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF [EndDate] == Null() THEN 1 ELSE 0 ENDIF" field="CurrentIndicator" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Created_DT = DateTimeNow()
+DI_Job_ID = [Engine.WorkflowFileName]
+DI_Modified_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="906" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>EmployeePayID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="EmployeePayID_SK" selected="True" />
+            <SelectField field="EMPLOYEEID_SK" selected="True" />
+            <SelectField field="BUSINESSENTITYID" selected="True" />
+            <SelectField field="SOR_SK" selected="True" />
+            <SelectField field="NATIONALIDNUMBER" selected="False" />
+            <SelectField field="RATECHANGEDATE" selected="True" />
+            <SelectField field="RATE" selected="True" />
+            <SelectField field="PAYFREQUENCY" selected="True" />
+            <SelectField field="STARTDATE" selected="True" />
+            <SelectField field="ENDDATE" selected="True" />
+            <SelectField field="NATIONALIDNUMBER_AK" selected="False" />
+            <SelectField field="DI_Created_DT" selected="True" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="CurrentIndicator" selected="True" />
+            <SelectField field="EMPLOYEEID_NK" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="654" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="BUSINESSENTITYID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1110" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorksPurchDW_Group9;UID=AdventureWorksPurchDW_Group9;PWD=__EncPwd1__|||DIMEMLOYEEPAY</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="EmployeePayID_SK" Dest="EMPLOYEEPAYID_SK" />
+                <Field Source="EMPLOYEEID_SK" Dest="EMPLOYEEPAY_DURABLE_SK" />
+                <Field Source="BUSINESSENTITYID" Dest="EMPLOYEEPAYID_NK" />
+                <Field Source="SOR_SK" Dest="SOR_SK" />
+                <Field Source="RATECHANGEDATE" Dest="RATECHANGEDATE" />
+                <Field Source="RATE" Dest="RATE" />
+                <Field Source="PAYFREQUENCY" Dest="PAYFREQUENCY" />
+                <Field Source="STARTDATE" Dest="EFFECTIVEDATE" />
+                <Field Source="ENDDATE" Dest="INEFFECTIVEDATE" />
+                <Field Source="DI_Created_DT" Dest="CREATEDDATE" />
+                <Field Source="DI_Job_ID" Dest="DI_JOBID" />
+                <Field Source="DI_Modified_Date" Dest="MODIFIEDDATE" />
+                <Field Source="CurrentIndicator" Dest="CURRENTINDICATOR" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorksPurchDW_Group9
+Query=DIMEMLOYEEPAY</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Unique" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimEmployeePayWorkFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
