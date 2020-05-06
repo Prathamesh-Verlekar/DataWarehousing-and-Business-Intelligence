@@ -25,8 +25,8 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 
 ### Steps Invloved:
 
-Step 1: Performed Data profiling using SQL and Microsoft PowerBI and listed tables from source system that was needed to asnwer the questions.\
-Step 2: Created a DataWarehouse in target database, by initially creating a Data Model using ER Studio then generating DDL script and finally creating tables in target database.\
-Step 3: Loaded data from source systems to our target database using Alteryx and Talend ETL tools.\
-Step 4: Created data visualization using Tableau and Microsoft PowerBI to answer the above questions.
+**Step 1:** Performed Data profiling using SQL and Microsoft PowerBI and listed tables from source system that was needed to asnwer the questions.\
+**Step 2:** Created a DataWarehouse in target database, by initially creating a Data Model using ER Studio then generating DDL script and finally creating tables in target database.\
+**Step 3:** Loaded data from source systems to our target database using Alteryx and Talend ETL tools.\
+**Step 4:** Created data visualization using Tableau and Microsoft PowerBI to answer the above questions.
 
