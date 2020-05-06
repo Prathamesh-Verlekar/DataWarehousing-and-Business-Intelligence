@@ -14,7 +14,7 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 • AdventureWorks’ sales territories.\
 • AdventureWorks’ ship methods.
 
-### Created SCD's for particular dimensions based on the requirement and also a geography dimension that can used as outrigger.
+### Created SCD's for particular dimensions based on the requirement and also a geography dimension that can be used as outrigger.
 
 • A slowly changing dimension (SCD) for AdventureWorks employee pay.\
 • A slowly changing dimension (SCD) for list prices for products above.\
