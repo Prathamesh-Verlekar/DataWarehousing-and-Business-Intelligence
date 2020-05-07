@@ -42,7 +42,7 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 
 ### Dimensional Model
 
-
+https://user-images.githubusercontent.com/55213702/81252687-90104900-8ff4-11ea-9630-2943b7620e94.JPG
 
 ### Steps Invloved:
 
