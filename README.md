@@ -46,12 +46,12 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 
 ### Steps Invloved:
 
-**Step 1:** Performed Data Integration:\ 
-1) Loaded staging tables.\
-2) Loaded dimensional tables.\
+**Step 1:** Performed Data Integration:
+1) Loaded staging tables.
+2) Loaded dimensional tables.
 
-**Step 2:** Created dashboards to be able to track entities in dimensional model such as movies, TV episodes and other titles with the people involved with associated revenue and ratings.\
-1) Used Microsoft PowerBI for all BI.\
+**Step 2:** Created dashboards to be able to track entities in dimensional model such as movies, TV episodes and other titles with the people involved with associated revenue and ratings.
+1) Used Microsoft PowerBI for all BI.
 2) Used Tableau for selected analysis.
 
 
