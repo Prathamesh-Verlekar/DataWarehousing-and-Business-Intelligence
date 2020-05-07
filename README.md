@@ -42,7 +42,7 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 
 ### Dimensional Model
 
-
+file:///C:/Users/verle/Local_Repository_GitHub/DataWarehousing-and-Business-Intelligence/IMDB%20Project/IMDB_Model_Image.JPG
 
 ### Steps Invloved:
 
