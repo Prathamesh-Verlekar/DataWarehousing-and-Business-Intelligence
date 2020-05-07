@@ -30,3 +30,28 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 **Step 3:** Loaded data from source systems to our target database using Alteryx and Talend ETL tools.\
 **Step 4:** Created data visualization using Tableau and Microsoft PowerBI to answer the above questions.
 
+# IMDB Project
+
+### Project Deliverables
+
+• Ingest initial set of tsv and csv files into staging tables.\
+• Design and load dimensional model to store all the data.\
+• Perform data consistency and cleansing processes.\
+• Add supplementat data to model.\
+• Design and create BI Visualizations answering business questions.
+
+### Dimensional Model
+
+![Alt text](/C:/Users/verle/Local_Repository_GitHub/DataWarehousing-and-Business-Intelligence/IMDB Project/IMDB_Model_Image.jpg?raw=true "IMDB Data Model")
+
+### Steps Invloved:
+
+**Step 1:** Performed Data Integration:\ 
+1) Loaded staging tables.\
+2) Loaded dimensional tables.\
+**Step 2:** Created dashboards to be able to track entities in dimensional model such as movies, TV episodes and other titles with the people involved with associated revenue and ratings.\
+1) Used Microsoft PowerBI for all BI.\
+2) Used Tableau for selected analysis.
+
+
+
