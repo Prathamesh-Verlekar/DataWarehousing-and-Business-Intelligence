@@ -5,8 +5,7 @@
 | NAME              |     NUID        |
 |------------------ |-----------------|
 |                   |                 |
-| Tanvi Gurav       |                 |
-| Siddhi Prabhu     |                 |
+|                   |                 |
 
 ## Final Project  - IMDB Data and Analysis
 
