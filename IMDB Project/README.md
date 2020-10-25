@@ -2,10 +2,10 @@
 
 #### Team Information:
 
-| NAME              |     NUID        |
-|------------------ |-----------------|
-|                   |                 |
-|                   |                 |
+|      NAME            |     NUID      |
+|--------------------- |---------------|
+|  Prathamesh Verlekar |               |                 
+|    Yash Pandya       |               |                 
 
 ## Final Project  - IMDB Data and Analysis
 
