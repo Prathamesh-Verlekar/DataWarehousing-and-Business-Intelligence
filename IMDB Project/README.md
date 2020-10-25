@@ -11,14 +11,12 @@
 
 ### Description:
 
-1. Designed dimensional data models in ER Studio Data Architect comprising of facts and dimensions
+1. Designed dimensional data models in ER Studio Data Architect consisting of facts and dimensions
 2. Created Staging tables using SQL scripts on Microsoft SQL Server
-3. Maintained SOR (System of Record) table to maintain authorized sources for a particular data subject
-4. Performed data profiling and loaded data from tsv/csv files into the staging tables using Talend
-5. Performed data consistency and cleansing processes
-6. Implemented error handling and inserted the unwanted data into reject tables along with their respective reject codes and reject reasons
-7. Performed data integration by populating data from staging tables into the dimensional tables using Talend
-8. Implemented dashboards on each subject area using Tableau and Power BI for answering business questions
+3. Performed data profiling and loaded data from tsv/csv files into the staging tables using Talend
+4. Implemented error handling and inserted the unwanted data into reject tables along with their respective reject codes and reject reasons
+5. Performed data integration by ingesting data from staging tables into the dimensional tables using Talend
+6. Designed interractive reports and dashboards using Tableau and Power BI 
 
 ## IMDB Datasets:
 
@@ -64,27 +62,15 @@
 ## Staging and Dimensional Tables
 
 
-![DimensionalTables](https://user-images.githubusercontent.com/59594174/97101086-bb552600-1670-11eb-8786-3b16e6f16491.PNG)
+
 
 
 ## Talend Jobs
 
-![dim_imdb_genres](https://user-images.githubusercontent.com/59594174/97101095-c740e800-1670-11eb-9cb2-ace62b4af8e9.PNG)
 
-
-![dim_imdb_titles](https://user-images.githubusercontent.com/59594174/97101097-c9a34200-1670-11eb-857a-33a580c649b7.PNG)
-
-
-![dim_name_PP](https://user-images.githubusercontent.com/59594174/97101099-cb6d0580-1670-11eb-8cfd-08b8b7780dee.PNG)
-
-
-![fact_imdb_brands](https://user-images.githubusercontent.com/59594174/97101100-ce67f600-1670-11eb-8cf6-10fc62978eb1.PNG)
-
-
-![fact_rejects](https://user-images.githubusercontent.com/59594174/97101102-d0ca5000-1670-11eb-9379-29848d757955.PNG)
 
 
 ## Tableau Dashboard
 
-![IMDBDashboard](https://user-images.githubusercontent.com/59594174/97101106-d32caa00-1670-11eb-9a88-ebdbe644404d.png)
+
 
