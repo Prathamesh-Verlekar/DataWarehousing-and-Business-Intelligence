@@ -61,8 +61,7 @@
 
 ## Staging and Dimensional Tables
 
-
-
+![DimensionalTables](https://user-images.githubusercontent.com/59594174/97101086-bb552600-1670-11eb-8786-3b16e6f16491.PNG)
 
 
 ## Talend Jobs
