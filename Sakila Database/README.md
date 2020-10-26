@@ -7,7 +7,7 @@
 
 | NAME                |     NUID        |
 |---------------------|-----------------|
-| Prathamesh Verlekar |   001302741     |
+| Prathamesh Verlekar |                 |
 | Yash Pandya         |                 |
 
 
