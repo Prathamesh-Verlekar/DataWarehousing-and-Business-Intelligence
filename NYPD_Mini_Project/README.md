@@ -2,9 +2,9 @@
 
 #### Team Information
 
-| NAME              |     NUID        |
-|------------------ |-----------------|
-| Priyanka Malpekar |   001302741     |
+| NAME                |     NUID        |
+|-------------------- |-----------------|
+| Prathamesh Verlekar |                 |
 
 ## Assignment 3 - NYPD
 
