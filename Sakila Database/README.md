@@ -5,10 +5,10 @@
 
 #### Team Information
 
-| NAME              |     NUID        |
-|------------------ |-----------------|
-| Priyanka Malpekar |   001302741     |
-
+| NAME                |     NUID        |
+|---------------------|-----------------|
+| Prathamesh Verlekar |   001302741     |
+| Yash Pamdya         |                 |
 
 
 #### Description
