@@ -1,28 +1,26 @@
-# Designing-Advanced-Data-Architectures-for-Business-Intelligence
+# DataWarehousing-and-Business-Intelligence
 
-### Assignment 2 - Chinook Database
+## Assignment 2 - Chinook Database
 
-#### Team Information
+### Team Information
 
 | NAME                |     NUID        |
 |-------------------- |-----------------|
-| Prathamesh Verlekar |                 |
-|     Yash Pandya     |                 |
+| Prathamesh Verlekar |    001376578    |
+|     Yash Pandya     |    001346162    |
 
 ### Description
 
-#### 1. Converted ER Model to Dimensional Model
-a) Listed facts & dimensions 
-b) Made a list of tables to be combined 
-c) Created date and calendar dimensions 
-d) Applied SCD’s (slowly changing dimension) on respective tables 
-e) Created tables with surrogate SKs, NKs & FKs f) Determined table attributes and performed source to target mappings
+### 1. Converted ER Model to Dimensional Model
+• Listed all the facts & dimensions for the model
+• Built tables with Surrogate keys, Natural keys, PK and FKs and determined table attributes and performed source to target mappings
+• Grouped tables based on the requirement
+• Created date and calendar dimensions 
+• Used different SCD’s (slowly changing dimension) type on respective tables based on the frequency of data update in the tables
 
-#### 2. Created data model in ER/Studio Data Architect
+### 2. Generated DDL script from ER studio, and uploaded data in the target database like SQL Server, MySQL, PostgreSQL and Oracle 11g
 
-#### 3. Generated DDL, created tables and uploaded data in the target database viz SQL Server, MySQL, PostgreSQL and Oracle 11g
-
-#### 4. Implemented visualization reports and dashboards in Power BI
+### 3. Created different visualization reports and dashboards using Microsoft PowerBI
 
 
 
