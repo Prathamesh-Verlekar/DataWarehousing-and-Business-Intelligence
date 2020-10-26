@@ -2,11 +2,11 @@
 
 #### Team Information:
 
-| NAME              |     NUID        |
-|------------------ |-----------------|
-| Priyanka Malpekar |   001302741     |
-| Tanvi Gurav       |   001306848     |
-| Siddhi Prabhu     |   001342165     |
+| NAME                |     NUID        |
+|-------------------- |-----------------|
+| Prathamesh Verlekar |   001302741     |
+|    Yash Pandya      |                 |
+
 
 ## Project 1 - Adventure Works 
 
