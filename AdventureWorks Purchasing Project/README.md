@@ -23,9 +23,9 @@
 ### Description:
 
 1. Analyzed data for source/target mappings and performed data profiling on Adventure Works 2017 database
-2. Created dimensional data model in ER Studio Data Architect and performed DDL operations on the target database
-3. Implemented error handling and inserted the unwanted data into reject tables along with their respective reject codes and reject reasons
+2. Designed dimensional data model in ER Studio Data Architect and performed DDL operations on the database
+3. Implemented error handling and inserted the bad data into reject tables along with their respective reject codes and reject reasons
 4. Performed data cleansing and loaded data into Adventure Works Purchasing DW using tools like Alteryx and Talend
-5. Implemented visualization reports and interactive dashboards on Power BI and Tableau answering business questions to gain better insights
+5. Created interactive dashboards on Power BI and Tableau answering business questions to gain better insights
 
 
