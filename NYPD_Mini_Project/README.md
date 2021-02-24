@@ -4,7 +4,7 @@
 
 | NAME                |     NUID        |
 |-------------------- |-----------------|
-| Prathamesh Verlekar |                 |
+| Prathamesh Verlekar |    001376578    |
 
 ## Assignment 3 - NYPD
 
