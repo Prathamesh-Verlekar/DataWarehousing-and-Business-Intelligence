@@ -4,9 +4,8 @@
 
 | NAME              |     NUID        |
 |------------------ |-----------------|
-| Priyanka Malpekar |   001302741     |
-| Tanvi Gurav       |   001306848     |
-| Siddhi Prabhu     |   001342165     |
+|Prathamesh Verlekar|   001376578     |
+
 
 ## Final Project  - IMDB Data and Analysis
 
