@@ -1,4 +1,4 @@
-# Designing Advanced Data Architectures for Business Intelligence
+# DataWarehousing and Business Intelligence
 
 #### Team Information:
 
