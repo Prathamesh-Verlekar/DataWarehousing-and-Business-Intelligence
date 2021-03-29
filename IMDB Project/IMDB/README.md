@@ -84,7 +84,4 @@
 ![fact_rejects](https://user-images.githubusercontent.com/59594174/97101102-d0ca5000-1670-11eb-9379-29848d757955.PNG)
 
 
-## Tableau Dashboard
-
-![IMDBDashboard](https://user-images.githubusercontent.com/59594174/97101106-d32caa00-1670-11eb-9a88-ebdbe644404d.png)
 
