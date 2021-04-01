@@ -16,11 +16,11 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 
 #### Created SCD's for particular dimensions based on the requirement and also a geography dimension that can be used as outrigger.
 
-• A slowly changing dimension (SCD) for AdventureWorks employee pay.\
-• A slowly changing dimension (SCD) for list prices for products above.\
-• A slowly changing dimension (SCD) for standards costs for products above.\
-• A geography dimension that AdventureWorks could use as outrigger.\
-• A calendar dimension that AdventureWorks could use for facts and dimensions.
+- A slowly changing dimension (SCD) for AdventureWorks employee pay.
+- A slowly changing dimension (SCD) for list prices for products above.
+- A slowly changing dimension (SCD) for standards costs for products above.
+- A geography dimension that AdventureWorks could use as outrigger.
+- A calendar dimension that AdventureWorks could use for facts and dimensions.
 
 
 #### Steps Invloved:
@@ -34,11 +34,11 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 
 #### Project Deliverables
 
-• Ingest initial set of tsv and csv files into staging tables.\
-• Design and load dimensional model to store all the data.\
-• Perform data consistency and cleansing processes.\
-• Add supplementat data to model.\
-• Design and create BI Visualizations answering business questions.
+- Ingest initial set of tsv and csv files into staging tables.
+- Design and load dimensional model to store all the data.
+- Perform data consistency and cleansing processes.
+- Add supplementat data to model.
+- Design and create BI Visualizations answering business questions.
 
 #### Dimensional Model
 
@@ -47,7 +47,7 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 #### Steps Invloved:
 
 **Step 1:** Performed Data Integration:
-1) Loaded staging tables.
+1. Loaded staging tables.
 2) Loaded dimensional tables.
 
 **Step 2:** Created dashboards to be able to track entities in dimensional model such as movies, TV episodes and other titles with the people involved with associated revenue and ratings.
