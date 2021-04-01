@@ -1,9 +1,9 @@
 # DataWarehousing-and-Business-Intelligence
 This repository includes all the Data Warehouse and Business Intelligence Projects and Assignments
 
-# AdventureWorks Purchasing Project
+## AdventureWorks Purchasing Project
 
-### Created a DataWarehouse containing data from AdventureWorks2017 that can be used by the business to answer questions on:
+#### Created a DataWarehouse containing data from AdventureWorks2017 that can be used by the business to answer questions on:
 
 • All product purchases made by AdventureWorks from vendors, i.e. purchase orders.\
 • List of products that might be purchased from Vendors, in other words, all the products that are not made by AdventureWorks.\
@@ -14,7 +14,7 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 • AdventureWorks’ sales territories.\
 • AdventureWorks’ ship methods.
 
-### Created SCD's for particular dimensions based on the requirement and also a geography dimension that can be used as outrigger.
+#### Created SCD's for particular dimensions based on the requirement and also a geography dimension that can be used as outrigger.
 
 • A slowly changing dimension (SCD) for AdventureWorks employee pay.\
 • A slowly changing dimension (SCD) for list prices for products above.\
@@ -23,16 +23,16 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 • A calendar dimension that AdventureWorks could use for facts and dimensions.
 
 
-### Steps Invloved:
+#### Steps Invloved:
 
 **Step 1:** Performed Data profiling using SQL and Microsoft PowerBI and listed tables from source system that was needed to asnwer the questions.\
 **Step 2:** Created a DataWarehouse in target database, by initially creating a Data Model using ER Studio then generating DDL script and finally creating tables in target database.\
 **Step 3:** Loaded data from source systems to our target database using Alteryx and Talend ETL tools.\
 **Step 4:** Created data visualization using Tableau and Microsoft PowerBI to answer the above questions.
 
-# IMDB Project
+## IMDB Project
 
-### Project Deliverables
+#### Project Deliverables
 
 • Ingest initial set of tsv and csv files into staging tables.\
 • Design and load dimensional model to store all the data.\
@@ -40,11 +40,11 @@ This repository includes all the Data Warehouse and Business Intelligence Projec
 • Add supplementat data to model.\
 • Design and create BI Visualizations answering business questions.
 
-### Dimensional Model
+#### Dimensional Model
 
 https://user-images.githubusercontent.com/55213702/81252687-90104900-8ff4-11ea-9630-2943b7620e94.JPG
 
-### Steps Invloved:
+#### Steps Invloved:
 
 **Step 1:** Performed Data Integration:
 1) Loaded staging tables.
