@@ -84,4 +84,13 @@
 ![fact_rejects](https://user-images.githubusercontent.com/59594174/97101102-d0ca5000-1670-11eb-9379-29848d757955.PNG)
 
 
+## Talend Master Jobs
+
+![Main Image](https://user-images.githubusercontent.com/55213702/113942112-516bab80-97ce-11eb-9598-734022af78ff.jpg)
+
+![First Part](https://user-images.githubusercontent.com/55213702/113942110-516bab80-97ce-11eb-8e42-6ecaa427de83.jpg)
+
+![Second Part](https://user-images.githubusercontent.com/55213702/113942111-516bab80-97ce-11eb-8efe-699f02d06ab5.jpg)
+
+
 
