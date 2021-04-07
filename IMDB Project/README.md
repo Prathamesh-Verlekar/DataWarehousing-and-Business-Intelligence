@@ -86,11 +86,15 @@
 
 ## Talend Master Jobs
 
-![Main Image](https://user-images.githubusercontent.com/55213702/113942112-516bab80-97ce-11eb-9598-734022af78ff.jpg)
+![Main Image](https://user-images.githubusercontent.com/55213702/113942896-a78d1e80-97cf-11eb-90e9-a6a4b9afd8ba.jpg)
 
-![First Part](https://user-images.githubusercontent.com/55213702/113942110-516bab80-97ce-11eb-8e42-6ecaa427de83.jpg)
+## Staging table Master Job
 
-![Second Part](https://user-images.githubusercontent.com/55213702/113942111-516bab80-97ce-11eb-8efe-699f02d06ab5.jpg)
+![First Part](https://user-images.githubusercontent.com/55213702/113942894-a78d1e80-97cf-11eb-9598-d185e3e0e201.jpg)
+
+## Final Table Master Job
+
+![Second Part](https://user-images.githubusercontent.com/55213702/113942895-a78d1e80-97cf-11eb-83e8-1e56ac4ee0ef.jpg)
 
 
 
